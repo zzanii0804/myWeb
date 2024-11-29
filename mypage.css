@@ -1,0 +1,159 @@
+
+body{
+    background-color: rgb(51, 51, 51);
+}    
+
+/*헤더*/    
+header{   
+    text-align: center;
+    margin: 0 auto ;
+}
+h1{
+   
+    text-shadow:0px 0px 3px rgb(0, 0, 0);
+    color: rgb(172, 156, 132);
+}
+header > a{
+    text-decoration: none;
+}
+
+/*메뉴*/
+#main-menu,.sub-menu{
+    margin: 0 ;
+    padding: 0;
+    list-style-type: none;    
+    
+}
+#main-menu{
+    position:relative;
+   
+    width:1200px;
+   
+    height: 250px;
+
+    margin:0 auto;
+   
+    overflow:hidden;
+}
+
+#main-menu > ul > li{
+    float: left;
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(36, 36, 36);
+    list-style-type: none;
+    height: 27px; width: 150px;
+}
+#main-menu > ul > li:hover{
+    background-color: rgb(172, 156, 132);
+}
+
+
+#main-menu > ul > li:first-child {border-radius: 5px 0 0 5px;}
+#main-menu > ul > li:last-child {border-radius: 0 5px 5px 0;}
+
+#main-menu > ul > li > a {
+    font-size: large;
+    color: seashell;
+    text-align: center;
+    text-decoration: none;
+            
+
+    display: block;
+    padding: 0px 27px;
+}
+
+
+/*서브메뉴*/        
+.sub-menu{ 
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+
+    /*안보이게*/
+    opacity: 0;
+    visibility: hidden;     
+}
+.sub-menu > li {
+    border: 1px solid rgb(255, 255, 255);
+    width: 150px;
+}
+
+.sub-menu> li:last-child {border-radius: 0 0 10px 10px ;}
+.sub-menu > li:hover {
+    background-color: rgb(172, 156, 132);
+}
+
+.sub-menu > li > a {
+    text-decoration: none;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#main-menu > ul > li:hover .sub-menu{ /*마우스 올려놓으면 보이게*/
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*본문*/
+ins { color:  rgb(204, 136, 105);}
+h2, h3, b{
+    color:  rgb(172, 156, 132);
+    text-shadow:0px 0px 3px rgb(0, 0, 0);
+}
+div{ 
+    width:1005px; margin: 0 auto;
+}
+section{
+    color: rgb(182, 159, 159);
+    width: 800px;
+    float: left;
+}
+section > ul > li {
+    list-style-type: none;
+}
+#intle{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 120px; width: 450px;
+}
+aside{
+    color: rgb(172, 156, 132);
+    width: 200px;
+    height: 1000px;
+    border-radius: 10px;
+    float: right; 
+}
+aside > ul >li {
+    list-style-type: none;
+}
+aside > ul >li >img {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 120px; width: 120px;
+}
+aside > ul >li > ul >li {
+    color: rgb(172, 156, 132);
+    list-style-type: initial;
+}
+
+
+/*푸터*/
+footer{ 
+    width: 1000px;
+    height: 20px; margin: 0 auto;
+}
+
+
+.cpuramimg{
+    height: 120px;
+    width: 120px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.mainbordimg{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
